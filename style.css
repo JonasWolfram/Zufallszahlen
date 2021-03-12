@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
+
+body {
+    background: rgb(19, 19, 19);
+    color: #fff;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+#header, #info, #con2 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#info {
+    grid-template-columns: 50%;
+    text-align: center;
+
+}
+
+.grid-container {
+    display: grid;
+    gap: 1rem;
+    grid-template-rows: minmax(200px, auto);
+    grid-template-columns: minmax(50%, auto);
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-div {
+    display: grid;
+    flex-direction: row;
+    background: #353535;
+    color: #fff;
+    box-shadow: rgba(16, 46, 114, 0.1) 0px 0.15rem 0.5rem, rgba(175, 183, 199, 0.1) 0px 0.075rem 0.175rem;
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    transition: all 500ms;
+    overflow: hidden;
+ }
+
+.grid-div:hover {
+    box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+    transform: translateY(-3px) scale(1.05);
+ }
+
+ #btn {
+    outline: none;
+    border-style: none;
+    height: 60px;
+    width: 160px;
+    border-radius: 4px;
+    font-size: 1.5em;
+    margin-top: 2rem;
+ }
+
+ #btn:hover {
+    color: white;
+    background: rgb(25, 196, 59);
+    transform: translateY(1px) scale(1.1);
+ }
+
+ #btn:active {
+     background: red;
+     animation: blink;
+ }
+
+ #btn2 {
+    height: 20;
+    color: white;
+    outline: none;
+    border-style: none;
+    background: red;
+    border-radius: 4px;
+    font-size: 1em;
+    margin-top: 10px;
+ }
+
+ #btn2:active {
+    color: black;
+    background: rgb(25, 196, 59);
+    transform: translateY(1px) scale(1.1);
+ }
+
+ button span {
+    max-width: 0;
+    transition: max-width 1s;
+    transition: max-width 1s;
+    display: inline-block;
+    vertical-align: top;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  button:hover span {
+    max-width: 7rem;
+  }
+
+ #con1 {
+    justify-content: center;
+    align-items: center;
+    font-size: 18rem;
+ }
